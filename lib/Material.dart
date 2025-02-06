@@ -1,13 +1,13 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/Material.dart';
 
-class Matrial extends StatefulWidget {
-  const Matrial({super.key});
+class Material extends StatefulWidget {
+  const Material({super.key});
 
   @override
-  State<Matrial> createState() => _Matrial();
+  State<Material> createState() => _Material();
 }
 
-class _Matrial extends State<Matrial> {
+class _Material extends State<Material> {
   double result = 0;
   final TextEditingController textEditingController = TextEditingController();
 
@@ -46,7 +46,7 @@ class _Matrial extends State<Matrial> {
                     color: Color.fromARGB(255, 240, 245, 250),
                     fontWeight: FontWeight.bold),
                 decoration: InputDecoration(
-                  hintText: "plese enter the amoubt in USD",
+                  hintText: "Enter The Amoubt In USD",
                   hintStyle: TextStyle(
                     color: Colors.white54,
                     fontWeight: FontWeight.bold,
@@ -71,7 +71,7 @@ class _Matrial extends State<Matrial> {
                   result = double.parse(textEditingController.text) * 81;
                 });
               },
-              child: Text("click me"),
+              child: Text("Click Me"),
             ),
           ],
         ),
@@ -79,13 +79,3 @@ class _Matrial extends State<Matrial> {
     );
   }
 }
-
-// class Matrials extends StatelessWidget {
-//   Matrials({super.key});
-//   final TextEditingController textEditingController = TextEditingController();
-
-//   @override
-//   Widget build(BuildContext context) {
-
-//   }
-// }
